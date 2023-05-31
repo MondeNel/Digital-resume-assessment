@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    width: 100%;
+    color: white;
+    font-family: system-ui;
+    background-color: whitesmoke;
+    background-size: cover;
+  }
+ /* ================================ This is a grid layout design ================================ */ 
+.grid-container {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 400px 400px 200px;
+    gap: 20px;
+
+    grid-template-areas: 
+    'h h h h'
+    'm m m a'
+    'm m m s'
+    'f f f f';
+}
+
+
+
+/* ==================================== The navigation bar ======================================= */
+.navbar { 
+  display: grid;
+  justify-content: end;
+  align-items: center;
+  position: fixed;
+  background-color: #020744;
+  height: 40px;
+  width: 100%;
+  top: 0;
+  margin-bottom: 5px; 
+  z-index: 1;
+}
+  
+  /* Links inside the navbar */
+  .navbar a {
+    color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: white;
+    color: black;
+  }
+
+  
+ /* ===========================  This is the header of the entire top section ==========================*/
+  header {
+    position: relative;
+    grid-area: h;
+    border: solid;
+    border-color: black;
+  }
+  
+  /* This is the head content which include introductory statement */
+  header {
+    position: relative;
+    background-color: rgb(226, 226, 226);
+  }
+
+  .head-content { 
+    display: block;
+    color: black;
+    font-size: large;
+    margin-left: 18rem;
+    padding-top: 2rem;
+
+  }
+  /* This is the image */
+  #header-image {
+    position: relative;
+    top: -150px;
+    border-radius: 10%;
+    width: 200px;
+    height: 185px;
+    margin-left: -17rem;
+  }
+
+
+
+
+
+
+
+
+
+
+  
+
+main {
+  grid-area: m;
+  border: solid;
+  border-color: black;
+}
+aside {
+  grid-area: a;
+  border: solid;
+  border-color: black;
+}
+section {
+  grid-area: s;
+  border: solid;
+  border-color: black;
+}
+footer {
+  grid-area: f;
+  border: solid;
+  border-color: black;
+}
