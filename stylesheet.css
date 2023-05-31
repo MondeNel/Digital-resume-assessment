@@ -57,12 +57,13 @@ body {
     grid-area: h;
     border: solid;
     border-color: black;
+    background-color: yellowgreen;
   }
   
   /* This is the head content which include introductory statement */
   header {
     position: relative;
-    background-color: rgb(226, 226, 226);
+   
   }
 
   .head-content { 
@@ -77,9 +78,9 @@ body {
   #header-image {
     position: relative;
     top: -150px;
-    border-radius: 10%;
+    border-radius: 50%;
     width: 200px;
-    height: 185px;
+    height: 200px;
     margin-left: -17rem;
   }
 
@@ -87,30 +88,70 @@ body {
 
 
 
-
-
-
-
-
-  
+/* ====================================== Main ===================================== */
 
 main {
   grid-area: m;
   border: solid;
   border-color: black;
+  background-color: orange;
 }
+
+.info {
+  display: flex;
+  width: 100%;
+  color: black;
+  font-size: small;
+}
+
+
+
+/* ====================================== Aside ===================================== */
+
 aside {
   grid-area: a;
   border: solid;
   border-color: black;
+  background-color: green;
 }
+
+.aside-content {
+  width: 100%;
+  color: black;
+  font-size: small;
+}
+
+
+
+
+
+/* ====================================== Section ===================================== */
 section {
   grid-area: s;
   border: solid;
   border-color: black;
+  background-color: red;
 }
+
+.section-content {
+  width: 100%;
+  color: black;
+  font-size: small;
+}
+
+
+
+
+
+/* ====================================== Footer ===================================== */
 footer {
   grid-area: f;
   border: solid;
   border-color: black;
+  background-color: aqua;
+}
+.footer {
+  width: 100%;
+  color: black;
+  font-size: small;
 }
