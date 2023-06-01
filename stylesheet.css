@@ -11,11 +11,13 @@ body {
     width: 100%;
     margin: auto;
     display: grid;
+    height: 100vh ;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 250px 450px 450px 250px;
-    gap: 10px;
+    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+    gap: 5px;
 
-    grid-template-areas: 
+    grid-template-areas:
+    'n n n n' 
     'h h h h'
     'm m m a'
     'm m m s'
@@ -24,12 +26,11 @@ body {
 
 
 
-/* ==================================== The navigation bar ======================================= */
+/* ========================================= The navigation bar ======================================= */
 .navbar { 
-  display: flex;
-  position: fixed;
-  justify-content: right;
-  align-items: center;
+  display: grid;
+  grid-area: n;
+  text-align: right;
   background-color: #020744;
   height: 40px;
   width: 100%;
@@ -51,22 +52,23 @@ body {
   }
 
   
- /* ===========================  This is the header of the entire top section ==========================*/
+ /* ===========================  This is the header grid of the entire top section ==========================*/
   header {
-    position: relative;
+    display: grid;
     grid-area: h;
     border-radius: 10px;
     border-color: black;
     background-color: yellowgreen;
   }
   
-  /* This is the head content which include introductory statement */
-  header {
+  /* This is the head content which include introductory statement *
+  #hero {
     position: relative;
    
   }
 
-  .head-content { 
+  .head-content {
+    position: absolute; 
     display: block;
     color: black;
     font-size: medium;
@@ -74,14 +76,14 @@ body {
     padding-top: 2rem;
 
   }
-  /* This is the image */
+  /* This is the image *
   #header-image {
-    position: relative;
-    top: -140px;
+    position: absolute;
     border-radius: 20%;
     width: 250px;
     height: 205px;
-    margin-left: -17rem;
+    margin-left: 1rem;
+    top: 45px;
   }
 
 
@@ -96,7 +98,7 @@ main {
   border-color: black;
   background-color: orange;
 }
-
+/*
 .info {
   position: relative;
   display: flex;
@@ -111,7 +113,7 @@ position: absolute;
 left: 60%;
 top: 47%;
 }
-
+*/
 
 
 /* ====================================== Aside ===================================== */
@@ -122,7 +124,7 @@ aside {
   border-color: black;
   background-color: green;
 }
-
+/*
 .aside-content {
   display: grid;
   width: 100%;
@@ -137,7 +139,7 @@ aside {
   text-align: center;
 }
 
-
+*/
 
 
 
@@ -149,7 +151,7 @@ section {
   border-color: black;
   background-color: red;
 }
-
+/*
 .section-content {
   display: grid;
   width: 100%;
@@ -164,7 +166,7 @@ section {
   text-align: center;
 }
 
-
+*/
 
 
 
@@ -175,6 +177,7 @@ footer {
   border-color: black;
   background-color: aqua;
 }
+/*
 .footer {
   position: relative;
   text-align: center;
@@ -226,4 +229,75 @@ footer {
   font-size: small;
   right: 40px;
   top: 78%;
+}
+
+
+/* ============================ Mobile Device =========================== */
+
+@media only screen and (max-width: 425px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr 1fr 1fr;
+    
+    grid-template-areas:
+    'n n n n'
+    'h h h h'
+    'm m m m'
+    'a a a a'
+    's s s s'
+    'f f f f';
+  }
+}
+
+
+ /* 
+.navbar {
+    height: 15px;
+    width: 100%;
+    font-size: 10px;
+  }
+.navbar a {
+    padding: 3px;
+    float: right;
+    font-size: 10px;
+  }
+
+#hero {
+  padding: 0;
+}
+
+#header-image {
+  border-radius: 20%;
+  margin-left: 1rem;
+  width: 140px;
+  height: 130px;
+}
+.head-content {
+  margin-left: 11rem;
+  padding: 2rem;
+  font-size: 60%;
+  
+}
+#section-education {
+  height:50px  ;
+}
+*/
+
+
+/* ================================== Tablet =================================== */
+
+@media only screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    
+    grid-template-areas:
+    'n n n n'
+    'h h h h'
+    'm m m m'
+    'm m m m'
+    'a a a a'
+    's s s s'
+    'f f f f';
+  }
 }
