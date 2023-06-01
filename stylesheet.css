@@ -13,15 +13,13 @@ body {
   display: grid;
   height: 100vh ;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 3fr 4fr 4fr 1fr 1fr;
+  grid-template-rows: 200px  300px 300px 300px;
   gap: 5px;
 
-  grid-template-areas:
-  'n n n n' 
+  grid-template-areas: 
   'h h h h'
-  'm m a a'
-  'm m a a'
-  's s s s'
+  'm m m a'
+  'm m m s'
   'f f f f';
 }
 
@@ -29,15 +27,16 @@ body {
 
 /* ========================================= The navigation bar ======================================= */
 .navbar { 
-display: grid;
-grid-area: n;
-text-align: right;
-background-color: #020744;
-height: 40px;
-width: 100%;
-margin-top: 0;
-margin-bottom: 5px; 
-z-index: 1;
+  display: flex;
+  position: fixed;
+  justify-content: right;
+  align-items: center;
+  background-color: #020744;
+  height: 40px;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 5px; 
+  z-index: 1;
 }
 
 /* Links inside the navbar */
@@ -73,7 +72,7 @@ header {
   display: grid;
   grid-area: h;
   left: 15rem;
-  top: -20px;
+  top: 40px;
   font-size: 15px;
 }
 /* This is the image */
@@ -83,7 +82,7 @@ header {
   width: 200px;
   height: 160px;
   margin-left: 1rem;
-  top: -1rem;
+  top: 40px;
 }
 
 
@@ -121,32 +120,14 @@ border-radius: 10px;
 color: black;
 background-color: green;
 }
-.work {
+.Experience {
   position: relative;
   display: grid;
   width: 100%;
   grid-area: a;
-  font-size: small;
+  font-size: 12px;
   margin-left: 20px;
-  top: 10px;
 }
-/*
-.aside-content {
-display: grid;
-width: 100%;
-color: black;
-font-size: 12px;
-}
-.soft-skills {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows: repeat(1, 65px);
-gap: 5px;
-text-align: center;
-}
-
-*/
-
 
 
 
@@ -157,33 +138,23 @@ border-radius: 10px;
 border-color: black;
 background-color: red;
 }
-/*
-.section-content {
-display: grid;
-width: 100%;
-color: black;
-font-size: small;
+.skills {
+  position: relative;
+  display: grid;
+  width: 100%;
+  grid-area: s;
+  font-size: 1rem;
+  margin-left: 20px;
 }
-.language {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: 100px;
-gap: 5px;
-text-align: center;
-}
-
-*/
-
 
 
 /* ====================================== Footer ===================================== */
 footer {
 grid-area: f;
-border-radius: 10px;
 border-color: black;
-background-color: aqua;
+background-color: rgb(4, 0, 255);
 }
-/*
+
 .footer {
 position: relative;
 text-align: center;
@@ -216,13 +187,13 @@ margin-bottom: 5px;
 
 #link-1 {
 position: absolute;
-left: 340px;
-top: 82%; 
+left: 360px;
+top: 85%; 
 }
 #link-2 {
 position: absolute;
-left: 300px;
-top: 82%; 
+left: 320px;
+top: 85%; 
 }
 #info-text {
 position: absolute;
@@ -238,15 +209,14 @@ top: 78%;
 }
 
 
-/* ============================ Mobile Device =========================== */
+/* ============================ Mobile Device =========================== *
 
 @media only screen and (max-width: 425px) {
 .grid-container {
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr 2fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   
   grid-template-areas:
-  'n n n n'
   'h h h h'
   'm m m m'
   'a a a a'
@@ -255,8 +225,6 @@ top: 78%;
 }
 }
 
-
-/* 
 .navbar {
   height: 15px;
   width: 100%;
@@ -287,10 +255,10 @@ font-size: 60%;
 #section-education {
 height:50px  ;
 }
-*/
 
 
-/* ================================== Tablet =================================== */
+
+/* ================================== Tablet =================================== *
 
 @media only screen and (max-width: 768px) {
 .grid-container {
@@ -298,7 +266,6 @@ height:50px  ;
   grid-template-rows: repeat(7, 1fr);
   
   grid-template-areas:
-  'n n n n'
   'h h h h'
   'm m m m'
   'm m m m'
