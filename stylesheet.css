@@ -12,7 +12,7 @@ body {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 200px 400px 400px 200px;
+    grid-template-rows: 250px 400px 400px 250px;
     gap: 10px;
 
     grid-template-areas: 
@@ -79,8 +79,8 @@ body {
     position: relative;
     top: -140px;
     border-radius: 20%;
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: 205px;
     margin-left: -17rem;
   }
 
@@ -98,11 +98,18 @@ main {
 }
 
 .info {
+  position: relative;
   display: flex;
   width: 100%;
   color: black;
   font-size: small;
   margin-top: 20px;
+}
+
+.job-2 {
+position: absolute;
+left: 60%;
+top: 47%;
 }
 
 
@@ -117,10 +124,17 @@ aside {
 }
 
 .aside-content {
+  display: grid;
   width: 100%;
   color: black;
-  font-size: small;
+  font-size: 12px;
 }
+.soft-skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-indent: 12px;
+}
+
 
 
 
@@ -152,9 +166,54 @@ footer {
   background-color: aqua;
 }
 .footer {
-  display: flex;
+  position: relative;
+  text-align: center;
   width: 100%;
   color: black;
   font-size: small;
-  justify-content: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+#mail {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#_subject {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+
+.submit {
+  font-size: large;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#link-1 {
+  position: absolute;
+  left: 340px;
+  top: 82%; 
+}
+#link-2 {
+  position: absolute;
+  left: 300px;
+  top: 82%; 
+}
+#info-text {
+  position: absolute;
+  font-size: small;
+  left: 10px;
+  top: 80%;
+}
+#location {
+  position: absolute;
+  font-size: small;
+  right: 40px;
+  top: 78%;
 }
