@@ -1,90 +1,90 @@
 body {
-    margin: 0;
-    width: 100%;
-    color: white;
-    font-family: system-ui;
-    background-color: whitesmoke;
-    background-size: cover;
-  }
- /* ================================ This is a grid layout design ================================ */ 
+  margin: 0;
+  width: 100%;
+  color: white;
+  font-family: system-ui;
+  background-color: whitesmoke;
+  background-size: cover;
+}
+/* ================================ This is a grid layout design ================================ */ 
 .grid-container {
-    width: 100%;
-    margin: auto;
-    display: grid;
-    height: 100vh ;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
-    gap: 5px;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  height: 100vh ;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 3fr 4fr 4fr 1fr 1fr;
+  gap: 5px;
 
-    grid-template-areas:
-    'n n n n' 
-    'h h h h'
-    'm m m a'
-    'm m m s'
-    'f f f f';
+  grid-template-areas:
+  'n n n n' 
+  'h h h h'
+  'm m a a'
+  'm m a a'
+  's s s s'
+  'f f f f';
 }
 
 
 
 /* ========================================= The navigation bar ======================================= */
 .navbar { 
-  display: grid;
-  grid-area: n;
-  text-align: right;
-  background-color: #020744;
-  height: 40px;
-  width: 100%;
-  margin-top: 0;
-  margin-bottom: 5px; 
-  z-index: 1;
+display: grid;
+grid-area: n;
+text-align: right;
+background-color: #020744;
+height: 40px;
+width: 100%;
+margin-top: 0;
+margin-bottom: 5px; 
+z-index: 1;
 }
-  
-  /* Links inside the navbar */
-  .navbar a {
-    color: #f2f2f2;
-    padding: 20px;
-  }
-  
-  /* Change background on mouse-over */
-  .navbar a:hover {
-    background: white;
-    color: black;
-  }
 
-  
- /* ===========================  This is the header grid of the entire top section ==========================*/
-  header {
-    display: grid;
-    grid-area: h;
-    border-radius: 10px;
-    border-color: black;
-    background-color: yellowgreen;
-  }
-  
-  /* This is the head content which include introductory statement *
-  #hero {
-    position: relative;
-   
-  }
+/* Links inside the navbar */
+.navbar a {
+  color: #f2f2f2;
+  padding: 20px;
+}
 
-  .head-content {
-    position: absolute; 
-    display: block;
-    color: black;
-    font-size: medium;
-    margin-left: 18rem;
-    padding-top: 2rem;
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: white;
+  color: black;
+}
 
-  }
-  /* This is the image *
-  #header-image {
-    position: absolute;
-    border-radius: 20%;
-    width: 250px;
-    height: 205px;
-    margin-left: 1rem;
-    top: 45px;
-  }
+
+/* ===========================  This is the header grid of the entire top section ==========================*/
+header {
+  display: grid;
+  grid-area: h;
+  border-radius: 10px;
+  border-color: black;
+  background-color: yellowgreen;
+}
+
+/* This is the head content which include introductory statement */
+#hero {
+  position: relative;
+ 
+}
+
+.head-content {
+  position: absolute;
+  display: grid;
+  grid-area: h;
+  left: 15rem;
+  top: -20px;
+  font-size: 15px;
+}
+/* This is the image */
+#header-image {
+  position: absolute;
+  border-radius: 20%;
+  width: 200px;
+  height: 160px;
+  margin-left: 1rem;
+  top: -1rem;
+}
 
 
 
@@ -93,50 +93,56 @@ body {
 /* ====================================== Main ===================================== */
 
 main {
-  grid-area: m;
-  border-radius: 10px;
-  border-color: black;
-  background-color: orange;
-}
-/*
-.info {
-  position: relative;
-  display: flex;
-  width: 100%;
-  color: black;
-  font-size: small;
-  margin-top: 20px;
+grid-area: m;
+border-radius: 10px;
+background-color: orange;
 }
 
-.job-2 {
-position: absolute;
-left: 60%;
-top: 47%;
+.info {
+  display: grid;
+  grid-area: m;
+  width: 100%;
+  color: black;
 }
-*/
+.education {
+  position: relative;
+  grid-area: m;
+  font-size: small;
+  margin-left: 20px;
+  top: 20px;
+}
 
 
 /* ====================================== Aside ===================================== */
 
 aside {
+grid-area: a;
+border-radius: 10px;
+color: black;
+background-color: green;
+}
+.work {
+  position: relative;
+  display: grid;
+  width: 100%;
   grid-area: a;
-  border-radius: 10px;
-  border-color: black;
-  background-color: green;
+  font-size: small;
+  margin-left: 20px;
+  top: 10px;
 }
 /*
 .aside-content {
-  display: grid;
-  width: 100%;
-  color: black;
-  font-size: 12px;
+display: grid;
+width: 100%;
+color: black;
+font-size: 12px;
 }
 .soft-skills {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(1, 65px);
-  gap: 5px;
-  text-align: center;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(1, 65px);
+gap: 5px;
+text-align: center;
 }
 
 */
@@ -146,24 +152,24 @@ aside {
 
 /* ====================================== Section ===================================== */
 section {
-  grid-area: s;
-  border-radius: 10px;
-  border-color: black;
-  background-color: red;
+grid-area: s;
+border-radius: 10px;
+border-color: black;
+background-color: red;
 }
 /*
 .section-content {
-  display: grid;
-  width: 100%;
-  color: black;
-  font-size: small;
+display: grid;
+width: 100%;
+color: black;
+font-size: small;
 }
 .language {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 100px;
-  gap: 5px;
-  text-align: center;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 100px;
+gap: 5px;
+text-align: center;
 }
 
 */
@@ -172,114 +178,114 @@ section {
 
 /* ====================================== Footer ===================================== */
 footer {
-  grid-area: f;
-  border-radius: 10px;
-  border-color: black;
-  background-color: aqua;
+grid-area: f;
+border-radius: 10px;
+border-color: black;
+background-color: aqua;
 }
 /*
 .footer {
-  position: relative;
-  text-align: center;
-  width: 100%;
-  color: black;
-  font-size: small;
-  padding-top: 2px;
-  padding-bottom: 2px;
+position: relative;
+text-align: center;
+width: 100%;
+color: black;
+font-size: small;
+padding-top: 2px;
+padding-bottom: 2px;
 }
 #mail {
-  font-size: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
+font-size: 15px;
+margin-top: 10px;
+margin-bottom: 10px;
+border-radius: 5px;
 }
 
 #_subject {
-  font-size: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
+font-size: 15px;
+margin-top: 10px;
+margin-bottom: 10px;
+border-radius: 5px;
 }
 
 
 .submit {
-  font-size: large;
-  margin-top: 5px;
-  margin-bottom: 5px;
+font-size: large;
+margin-top: 5px;
+margin-bottom: 5px;
 }
 
 #link-1 {
-  position: absolute;
-  left: 340px;
-  top: 82%; 
+position: absolute;
+left: 340px;
+top: 82%; 
 }
 #link-2 {
-  position: absolute;
-  left: 300px;
-  top: 82%; 
+position: absolute;
+left: 300px;
+top: 82%; 
 }
 #info-text {
-  position: absolute;
-  font-size: small;
-  left: 10px;
-  top: 80%;
+position: absolute;
+font-size: small;
+left: 10px;
+top: 80%;
 }
 #location {
-  position: absolute;
-  font-size: small;
-  right: 40px;
-  top: 78%;
+position: absolute;
+font-size: small;
+right: 40px;
+top: 78%;
 }
 
 
 /* ============================ Mobile Device =========================== */
 
 @media only screen and (max-width: 425px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 2fr 1fr 1fr 1fr;
-    
-    grid-template-areas:
-    'n n n n'
-    'h h h h'
-    'm m m m'
-    'a a a a'
-    's s s s'
-    'f f f f';
-  }
+.grid-container {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr 1fr 1fr;
+  
+  grid-template-areas:
+  'n n n n'
+  'h h h h'
+  'm m m m'
+  'a a a a'
+  's s s s'
+  'f f f f';
+}
 }
 
 
- /* 
+/* 
 .navbar {
-    height: 15px;
-    width: 100%;
-    font-size: 10px;
-  }
+  height: 15px;
+  width: 100%;
+  font-size: 10px;
+}
 .navbar a {
-    padding: 3px;
-    float: right;
-    font-size: 10px;
-  }
+  padding: 3px;
+  float: right;
+  font-size: 10px;
+}
 
 #hero {
-  padding: 0;
+padding: 0;
 }
 
 #header-image {
-  border-radius: 20%;
-  margin-left: 1rem;
-  width: 140px;
-  height: 130px;
+border-radius: 20%;
+margin-left: 1rem;
+width: 140px;
+height: 130px;
 }
 .head-content {
-  margin-left: 11rem;
-  padding: 2rem;
-  font-size: 60%;
-  
+margin-left: 11rem;
+padding: 2rem;
+font-size: 60%;
+
 }
 #section-education {
-  height:50px  ;
+height:50px  ;
 }
 */
 
@@ -287,17 +293,17 @@ footer {
 /* ================================== Tablet =================================== */
 
 @media only screen and (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, 1fr);
-    
-    grid-template-areas:
-    'n n n n'
-    'h h h h'
-    'm m m m'
-    'm m m m'
-    'a a a a'
-    's s s s'
-    'f f f f';
-  }
+.grid-container {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  
+  grid-template-areas:
+  'n n n n'
+  'h h h h'
+  'm m m m'
+  'm m m m'
+  'a a a a'
+  's s s s'
+  'f f f f';
+}
 }
