@@ -134,6 +134,7 @@ aside {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 65px);
   gap: 5px;
+  text-align: center;
 }
 
 
@@ -160,6 +161,7 @@ section {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 100px;
   gap: 5px;
+  text-align: center;
 }
 
 
