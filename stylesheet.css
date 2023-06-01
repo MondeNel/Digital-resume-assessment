@@ -12,7 +12,7 @@ body {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 250px 400px 400px 250px;
+    grid-template-rows: 250px 450px 450px 250px;
     gap: 10px;
 
     grid-template-areas: 
@@ -132,7 +132,8 @@ aside {
 .soft-skills {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  text-indent: 12px;
+  grid-template-rows: repeat(1, 65px);
+  gap: 5px;
 }
 
 
@@ -149,9 +150,16 @@ section {
 }
 
 .section-content {
+  display: grid;
   width: 100%;
   color: black;
   font-size: small;
+}
+.language {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px;
+  gap: 5px;
 }
 
 
