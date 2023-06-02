@@ -1,11 +1,11 @@
 body {
   margin: 0;
   width: 100%;
-  color: white;
+  color: rgb(56, 56, 56);
   font-family: system-ui;
-
 }
 
+/* ================================== Navbar =================================== */
   .topnav {
   display: flex;
   position: fixed;
@@ -14,7 +14,7 @@ body {
   background-color: #020744;
   height: 40px;
   width: 100%;
-  margin-top: 0;
+  top: 0;
   margin-bottom: 5px; 
   z-index: 1;
   }
@@ -38,26 +38,42 @@ body {
     color: white;
   }
 
+/* ================================== Header =================================== */
+
   header {
     display: flex;
     align-items: center;
     padding: 20px;
-    background-color: #e6e4e4;
   }
+  .username {
+    width: 
+  }
+  
   img {
+    position: relative;
+    top: 20px;
     width: 200px;
-    height: 200px;
+    height: 150px;
+    border-radius: 10%;
     margin-right: 20px;
   }
 h1 {
   margin: 0px;
   color: black;
 }
+.username {
+  position: relative;
+  bottom: 100px;
+  display: block;
+  margin-left: 230px;
+}
+
+/* ================================== Button =================================== */
 
 .btn {
-  background-color: rgb(223, 219, 13);
+  background-color: rgb(223, 125, 13);
   border-radius: 50%;
-  border: solid 1px rgb(217, 238, 31);
+  border: solid 1px rgb(238, 62, 31);
   width: 40px;
   height: 40px;
 }
@@ -69,7 +85,11 @@ h1 {
   margin-right: 80px;
   margin-bottom: 80px;
 }
+
+/* ================================== Main content =================================== */
+
 .info {
+  display: block;
   color: black;
   padding: 10px;
 }
@@ -85,6 +105,9 @@ h1 {
   font-size: 1rem;
   font-size: medium;
 }
+
+/* ================================== Footer =================================== */
+
 .footer {
   background-color: #020744;
   width: auto;  
@@ -119,75 +142,67 @@ h1 {
 
 
 
-.parent {
-  display: grid;
-  width: 90%;
-  margin: auto;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 100px 400px 200px 200px 200px;
-  gap: 1rem;
 
-  grid-template-areas:
-  'n n n n' 
-  'h h h h'
-  'm m m a'
-  'm m m a'
-  'f f f f';
-
-}
-
-.child-1 {
-  grid-area: n;
-  background-color: #04AA6D;
-}
-.child-2 {
-  grid-area: h;
-  background-color: rgb(141, 80, 5);
-}
-.child-3 {
-  grid-area: m;
-  background-color: greenyellow;
-}
-.child-4 {
-  grid-area: a;
-  background-color: blueviolet;
-}
-.child-5 {
-  grid-area: f;
-  background-color: rgb(43, 226, 186);
-}
-
-/* Responsive Styles *
+/* ================================== Responsive design styles =================================== */
 
 
-@media only screen and (max-width: 550px) {
-.parent {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr 1fr 1fr 1fr;
+@media (min-width: 600px) {
 
-  grid-template-areas:
-  'n n n n' 
-  'm m m m'
-  'a a a a'
-  'f f f f';
-
+p {
+  font-size: 1rem;
 }
 
 }
+
+@media (min-width: 600px) {
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
   
-
-/* @media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .resume {
-    max-width: 600px;
+  }
+  
+/* ================================== Responsive design (Grid) =================================== */
+  
+@media  (max-width: 1500px) {
+  .container {
+    display: grid;
+    width: 100%;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 400px 400px 300px;
+    gap: 2rem;
+    padding-bottom: 2rem;
+  
+    grid-template-areas:
+    'n n n n' 
+    'm m a a'
+    'm m a a'
+    'f f f f';
+  
+  }
+  
+  .child-1 {
+    grid-area: n;
+    border: solid red;
+  }
+  
+  .child-2 {
+    grid-area: m;
+    border: solid green;
+  }
+  .child-3 {
+    grid-area: a;
+    border: solid blue;
+  }
+  .child-5 {
+    grid-area: f;
+    border: solid purple;
   }
 }
 
-@media only screen and (min-width: 1025px) {
-  .resume {
-    max-width: 800px;
-  }
-} */
+  
 
 
 
