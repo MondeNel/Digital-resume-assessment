@@ -110,6 +110,18 @@ p {
   padding: 10px;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 5px;
+  padding: 10px;
+  font-size: 17px;
+}
 
 /* ================================== Footer =================================== */
 
