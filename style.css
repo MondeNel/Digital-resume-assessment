@@ -12,7 +12,7 @@ body {
   justify-content: right;
   align-items: center;
   background-color: #020744;
-  height: 40px;
+  height: 25px;
   width: 100%;
   top: 0;
   margin-bottom: 5px; 
@@ -25,7 +25,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1.5vw;
   }
   
   .topnav a:hover {
@@ -45,28 +45,34 @@ body {
     align-items: center;
     padding: 20px;
   }
-  .username {
-    width: 
-  }
+ 
   
-  img {
-    position: relative;
-    top: 20px;
-    width: 200px;
-    height: 150px;
-    border-radius: 10%;
-    margin-right: 20px;
-  }
 h1 {
   margin: 0px;
   color: black;
+}
+h2 {
+  margin: 0px;
+  color: black;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+h3 {
+  margin-left: 10px;
+}
+p {
+ display: flex;
+ padding: 0;
+ margin-left: 10px;
 }
 .username {
   position: relative;
   bottom: 100px;
   display: block;
-  margin-left: 230px;
+  margin: auto;
+  font-size: auto;
 }
+
 
 /* ================================== Button =================================== */
 
@@ -93,28 +99,16 @@ h1 {
   color: black;
   padding: 10px;
 }
-.heading {
-  font-size: 15px;
-  font-weight: bold;
-}
-#type {
-  font-size: 15px;
-  font-weight: bold;
-}
-#text .text {
-  font-size: 1rem;
-  font-size: medium;
-}
+
 
 /* ================================== Footer =================================== */
 
 .footer {
-  background-color: #020744;
-  width: auto;  
+
+  width: auto;
+  height: auto;  
   text-align: center;
   color: white;
-  padding: 1rem;
-  padding: 0%;
 }
 #mail #_subject {
   font-size: 15px;
@@ -131,81 +125,391 @@ h1 {
 .submit {
   font-size: 20px;
   margin-top: 1em;
-  
+  margin-bottom: 1rem;
 }
-#link {
-  float: right;
-  padding-right: 1rem;
-  bottom: 1rem;
+.icon {
+  float: left;
+  margin-left: 5px;
+  color: black;
 }
-
-
-
-
 
 /* ================================== Responsive design styles =================================== */
 
-
-@media (min-width: 600px) {
-
-p {
-  font-size: 1rem;
-}
-
-}
-
-@media (min-width: 600px) {
-
-  p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
   
-  }
+  @media (min-width: 600px) {
   
-/* ================================== Responsive design (Grid) =================================== */
-  
-@media  (max-width: 1500px) {
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    h3 {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    
+    
+    }
+
+
+/* ========================== Extra small devices ======================== */
+@media only screen and (max-width: 600px) {
   .container {
     display: grid;
     width: 100%;
     margin: auto;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 200px 400px 400px 300px;
-    gap: 2rem;
+    grid-template-columns:(1fr);
+    grid-template-rows: 1fr 2fr 1fr 1fr 2fr;
+    gap: 1rem;
     padding-bottom: 2rem;
   
     grid-template-areas:
     'n n n n' 
-    'm m a a'
-    'm m a a'
+    'm m m m'
+    'a a a a'
+    's s s s'
     'f f f f';
-  
+   
   }
-  
   .child-1 {
     grid-area: n;
     border: solid red;
+    font-size: 2.5vw;
   }
   
   .child-2 {
     grid-area: m;
     border: solid green;
+    font-size: 2.5vw;
   }
   .child-3 {
     grid-area: a;
     border: solid blue;
+    font-size: 2.5vw;
   }
+  .child-4 {
+    grid-area: s;
+    border: solid rgb(0, 217, 255);
+    font-size: 2.5vw;
+  }
+  
   .child-5 {
     grid-area: f;
     border: solid purple;
+    font-size: 2.5vw;
   }
+  .icon {
+    font-size: 2vw;
+  }
+  .btn {
+    display: none;
+  }
+  img {
+    margin-left: 130px;
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-bottom: 1rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.username{
+  display: block;
+  top: 15px;
 }
 
+}
+
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    display: grid;
+    width: 100%;
+    margin: auto;
+    grid-template-columns:(1fr);
+    grid-template-rows: 1fr 2fr 1fr 1fr 2fr;
+    gap: 1rem;
+    padding-bottom: 2rem;
   
+    grid-template-areas:
+    'n n n n' 
+    'm m m m'
+    'a a a a'
+    's s s s'
+    'f f f f';
+   
+  }
+  .child-1 {
+    grid-area: n;
+    border: solid red;
+    font-size: 1.5vw;
+  }
+  
+  .child-2 {
+    grid-area: m;
+    border: solid green;
+    font-size: 1.5vw;
+  }
+  .child-3 {
+    grid-area: a;
+    border: solid blue;
+    font-size: 1.5vw;
+  }
+  .child-4 {
+    grid-area: s;
+    border: solid rgb(0, 217, 255);
+    font-size: 1.5vw;
+  }
+  
+  .child-5 {
+    grid-area: f;
+    border: solid purple;
+    font-size: 1.5vw;
+  }
+ 
+ .icon {
+  font-size: 2vw;
+}
+img {
+  margin-left: 130px;
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-bottom: 1rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.username{
+display: block;
+top: 15px;
+}
+
+}
 
 
 
 
 
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    display: grid;
+    width: 100%;
+    margin: auto;
+    grid-template-columns:(1fr);
+    grid-template-rows: 20% 30% 30% 30%;
+    gap: 1rem;
+    padding-bottom: 2rem;
+  
+    grid-template-areas:
+    'n n n n' 
+    'm m a a'
+    'm m s s'
+    'f f f f';
+   
+  }
+  .child-1 {
+    grid-area: n;
+    border: solid red;
+    font-size: 1.5vw;
+  }
+  
+  .child-2 {
+    grid-area: m;
+    border: solid green;
+    font-size: 1.5vw;
+  }
+  .child-3 {
+    grid-area: a;
+    border: solid blue;
+    font-size: 1.5vw;
+  }
+  .child-4 {
+    grid-area: s;
+    border: solid rgb(0, 217, 255);
+    font-size: 1.5vw;
+  }
+  
+  .child-5 {
+    grid-area: f;
+    border: solid purple;
+    font-size: 1.5vw;
+  }
+  .icon {
+    font-size: 2vw;
+  }
+ #img {
+  font-size: small;
+ }
+ img {
+  margin-left: 130px;
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-bottom: 1rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.username{
+display: block;
+top: 15px;
+}
+}
+ 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container { display: grid;
+    width: 100%;
+    margin: auto;
+    grid-template-columns:(1fr);
+    grid-template-rows: 20% 30% 30% 30%;
+    gap: 1rem;
+    padding-bottom: 2rem;
+  
+    grid-template-areas:
+    'n n n n' 
+    'm m a a'
+    'm m s s'
+    'f f f f';
+   
+  }
+  .child-1 {
+    grid-area: n;
+    border: solid red;
+    font-size: 1.5vw;
+  }
+  
+  .child-2 {
+    grid-area: m;
+    border: solid green;
+    font-size: 1.5vw;
+  }
+  .child-3 {
+    grid-area: a;
+    border: solid blue;
+    font-size: 1.5vw;
+  }
+  .child-4 {
+    grid-area: s;
+    border: solid rgb(0, 217, 255);
+    font-size: 1.5vw;
+  }
+  
+  .child-5 {
+    grid-area: f;
+    border: solid purple;
+    font-size: 1.5vw;
+  }
+
+.icon {
+  font-size: 2vw;
+}
+img {
+  margin-left: 130px;
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-bottom: 1rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.username{
+display: block;
+top: 15px;
+}
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container { display: grid;
+    width: 100%;
+    margin: auto;
+    grid-template-columns:(4, 1fr);
+    grid-template-rows: 20% 30% 30% 30%;
+    gap: 1rem;
+    padding-bottom: 2rem;
+  
+    grid-template-areas:
+    'n n n n' 
+    'm m a a'
+    'm m s s'
+    'f f f f';
+   
+  }
+  .child-1 {
+    grid-area: n;
+    border: solid red;
+    font-size: 1.5vw;
+  }
+  
+  .child-2 {
+    grid-area: m;
+    border: solid green;
+    font-size: 1.5vw;
+  }
+  .child-3 {
+    grid-area: a;
+    border: solid blue;
+    font-size: 1.5vw;
+  }
+  .child-4 {
+    grid-area: s;
+    border: solid rgb(0, 217, 255);
+    font-size: 1.5vw;
+  }
+  
+  .child-5 {
+    grid-area: f;
+    border: solid purple;
+    font-size: 1.5vw;
+  }
+
+.icon {
+  font-size: 2vw;
+}
+img {
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-bottom: 1rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.username{
+display: block;
+margin-left: 35%;
+top: -20%;
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
