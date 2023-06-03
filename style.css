@@ -45,8 +45,25 @@ body {
     align-items: center;
     padding: 20px;
   }
- 
+  .username {
+    position: relative;
+   display: block;
+   margin-left: 40%;
+   font-size: auto;
+   top: -195px;
+   padding: 1rem;
+  }
   
+  img {
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 1rem;
+    margin-right: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+ 
 h1 {
   margin: 0px;
   color: black;
@@ -64,13 +81,6 @@ p {
  display: flex;
  padding: 0;
  margin-left: 10px;
-}
-.username {
-  position: relative;
-  bottom: 100px;
-  display: block;
-  margin: auto;
-  font-size: auto;
 }
 
 
@@ -146,7 +156,7 @@ p {
       font-size: 1rem;
       line-height: 1.5;
     }
-    
+  
     
     }
 
@@ -203,19 +213,24 @@ p {
   .btn {
     display: none;
   }
+  .username {
+   position: relative;
+   display: block;
+   margin-left: 20%;
+   top: 0;
+   padding: 0;
+  }
+  
   img {
-    margin-left: 130px;
-    margin-top: 20px;
-    margin-right: 100px;
+   display: inline-block;
+   text-align: center;
+    margin-top: 5px;
     margin-bottom: 1rem;
+    margin-right: 30px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-}
-.username{
-  display: block;
-  top: 15px;
-}
+  }
 
 }
 
@@ -274,19 +289,7 @@ p {
  .icon {
   font-size: 2vw;
 }
-img {
-  margin-left: 130px;
-  margin-top: 20px;
-  margin-right: 100px;
-  margin-bottom: 1rem;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-.username{
-display: block;
-top: 15px;
-}
+
 
 }
 
@@ -343,22 +346,8 @@ top: 15px;
   .icon {
     font-size: 2vw;
   }
- #img {
-  font-size: small;
- }
- img {
-  margin-left: 130px;
-  margin-top: 20px;
-  margin-right: 100px;
-  margin-bottom: 1rem;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-.username{
-display: block;
-top: 15px;
-}
+
+
 }
  
 
@@ -410,19 +399,7 @@ top: 15px;
 .icon {
   font-size: 2vw;
 }
-img {
-  margin-left: 130px;
-  margin-top: 20px;
-  margin-right: 100px;
-  margin-bottom: 1rem;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-.username{
-display: block;
-top: 15px;
-}
+
 }
 
 
@@ -474,21 +451,9 @@ top: 15px;
 .icon {
   font-size: 2vw;
 }
-img {
-  margin-left: 30px;
-  margin-top: 5px;
-  margin-bottom: 1rem;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-.username{
-display: block;
-margin-left: 35%;
-top: -20%;
 
 }
-}
+
 
 
 
