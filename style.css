@@ -46,9 +46,9 @@ body {
     padding: 20px;
   }
   .username {
-    position: relative;
+   position: relative;
    display: block;
-   margin-left: 40%;
+   margin-left: 20%;
    font-size: auto;
    top: -195px;
    padding: 1rem;
@@ -56,7 +56,7 @@ body {
   
   img {
     margin-left: 30px;
-    margin-top: 5px;
+    margin-top: 25px;
     margin-bottom: 1rem;
     margin-right: 30px;
     width: 200px;
@@ -143,23 +143,6 @@ p {
   color: black;
 }
 
-/* ================================== Responsive design styles =================================== */
-
-  
-  @media (min-width: 600px) {
-  
-    p {
-      font-size: 1rem;
-      line-height: 1.5;
-    }
-    h3 {
-      font-size: 1rem;
-      line-height: 1.5;
-    }
-  
-    
-    }
-
 
 /* ========================== Extra small devices ======================== */
 @media only screen and (max-width: 600px) {
@@ -222,15 +205,15 @@ p {
   }
   
   img {
-   display: inline-block;
-   text-align: center;
-    margin-top: 5px;
-    margin-bottom: 1rem;
-    margin-right: 30px;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-  }
+  display: inline-block;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 1rem;
+  margin-right: 30px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
 
 }
 
@@ -240,7 +223,7 @@ p {
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 620px) {
   .container {
     display: grid;
     width: 100%;
@@ -289,7 +272,17 @@ p {
  .icon {
   font-size: 2vw;
 }
-
+.username {
+  position: relative;
+  display: block;
+  margin-left: 35%;
+  font-size: auto;
+  top: -240px;
+  padding: 1rem;
+ }
+ .btn {
+  display: none;
+ }
 
 }
 
@@ -399,7 +392,9 @@ p {
 .icon {
   font-size: 2vw;
 }
-
+.btn {
+  display: block;
+}
 }
 
 
