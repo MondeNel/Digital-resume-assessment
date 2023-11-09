@@ -8,7 +8,7 @@
 HTML ⚙️
 CSS 🎨
 
-#### This is a digital resume of myself. My work Experiences, Education and Skills. 
+#### This is a digital resume of myself. Just an overview of how it looks.
 
 ![Resume Screenshot](https://github.com/MondeNel/MONNEL173_FTO2304_GroupB_Digital_Resume/blob/923117661578635ddbc4df9a4b35f288d392fc72/ResumeScreenshot.png)
 
