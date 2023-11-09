@@ -4,8 +4,6 @@
 
 ### Project : Digital resume
 
-Web wireframe Figma file : https://www.figma.com/file/VrQ9vvXhHc2fNLORgtYCi7/MONNEL173_FTO2304GroupB_MondeNel_ITW?type=whiteboard&node-id=0%3A1&t=dSGEtdJEkXZf3GmA-1
-
 ### Technologies used in this project :
 HTML ⚙️
 CSS 🎨
